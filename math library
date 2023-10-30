@@ -1,0 +1,11 @@
+import math 
+#define a function to caluclate the odds
+def calculate_odds(probablity):
+    #the formula for odds is: odds = probablity / (1-probablity)
+    return probablity / (1 - probablity)
+#get the probablity of the event from the user
+probablity = float(input("Enter the probablity of the event (between 0 and 1):"))
+#calculate the odds
+odds = calculate_odds(probablity)
+#print the results
+print(f"The odds of the event happening are: {odds:.2f} to 1")
